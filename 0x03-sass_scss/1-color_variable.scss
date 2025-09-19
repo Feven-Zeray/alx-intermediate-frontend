@@ -1,0 +1,13 @@
+// Assign #3D3D3D color to body & p using a variable
+$sass-color: #3d3d3d;
+
+body {
+  color: $sass-color;
+}
+
+p {
+  color: $sass-color;
+}
+
+// Run and check the compiled CSS
+// Command: npx sass 1-color_variable.scss 1-color_variable.css

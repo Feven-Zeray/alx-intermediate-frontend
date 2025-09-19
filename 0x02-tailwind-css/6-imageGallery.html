@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid, Flex, and Image Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @media (max-width: 768px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body class="p-4 bg-gray-100">
+    <!-- Header -->
+    <header class="bg-blue-500 text-white p-4">
+      <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <!-- Main grid content -->
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+      <!-- Sidebar -->
+      <aside class="bg-green-200 p-4">Sidebar</aside>
+      <!-- Section with Flexbox -->
+      <section class="lg:col-span-2 flex flex-col flex-1">
+        <div class="bg-red-200 p-4 h-1/2">Flexbox Item 1</div>
+        <div class="bg-red-400 p-4 h-1/2">Flexbox Item 2</div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+      <p>&copy; 2024 John Doe's Blog</p>
+    </footer>
+
+    <!-- Responsive Image Gallery Section -->
+    <section class="mt-8">
+      <h2 class="text-2xl font-bold mb-4 text-center">Tech Image Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          class="flex justify-center items-center p-4 bg-white rounded-lg shadow"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript"
+            class="max-h-24 object-contain"
+          />
+        </div>
+        <div
+          class="flex justify-center items-center p-4 bg-white rounded-lg shadow"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt="HTML5"
+            class="max-h-24 object-contain"
+          />
+        </div>
+        <div
+          class="flex justify-center items-center p-4 bg-white rounded-lg shadow"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt="CSS3"
+            class="max-h-24 object-contain"
+          />
+        </div>
+        <div
+          class="flex justify-center items-center p-4 bg-white rounded-lg shadow"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            alt="React"
+            class="max-h-24 object-contain"
+          />
+        </div>
+        <div
+          class="flex justify-center items-center p-4 bg-white rounded-lg shadow"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+            alt="Flutter"
+            class="max-h-24 object-contain"
+          />
+        </div>
+        <div
+          class="flex justify-center items-center p-4 bg-white rounded-lg shadow"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            alt="Node.js"
+            class="max-h-24 object-contain"
+          />
+        </div>
+        <div
+          class="flex justify-center items-center p-4 bg-white rounded-lg shadow"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+            alt="Python"
+            class="max-h-24 object-contain"
+          />
+        </div>
+        <div
+          class="flex justify-center items-center p-4 bg-white rounded-lg shadow"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+            alt="Firebase"
+            class="max-h-24 object-contain"
+          />
+        </div>
+        <div
+          class="flex justify-center items-center p-4 bg-white rounded-lg shadow"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+            alt="MySQL"
+            class="max-h-24 object-contain"
+          />
+        </div>
+        <div
+          class="flex justify-center items-center p-4 bg-white rounded-lg shadow"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+            alt="TypeScript"
+            class="max-h-24 object-contain"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

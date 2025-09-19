@@ -1,0 +1,16 @@
+// Define reusable mixin for left & right margin
+@mixin margin-x($size) {
+  margin-left: $size;
+  margin-right: $size;
+}
+
+body {
+  @include margin-x(10px);
+}
+
+div {
+  @include margin-x(15px);
+}
+
+// Run to check the compiled CSS
+// Command: npx sass 3-mixin_margins.scss

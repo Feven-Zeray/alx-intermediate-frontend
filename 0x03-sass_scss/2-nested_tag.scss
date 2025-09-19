@@ -1,0 +1,12 @@
+// Nesting declarations in SCSS
+body {
+  margin: 0px;
+  padding: 0px;
+
+  p {
+    margin: 10px;
+  }
+}
+
+// Run and check the compiled CSS
+// Command: npx sass 2-nested_tag.scss
